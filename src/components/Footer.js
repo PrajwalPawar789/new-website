@@ -5,7 +5,7 @@ import footer2 from "../images/footer2.webp";
 const Footer = () => {
   return (
     <footer >
-      <div className="container mx-auto text-center">
+      <div className="container mx-auto text-center mt-11">
         <div className="flex justify-center mb-4">
           <img
             src={footer1}

@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import image1 from "../images/2bhk.webp"; // Importing the local 2BHK image
 import image2 from "../images/flat3.webp";
 import image3 from "../images/3Bhk.webp";
-import image4 from "../images/flat4.webp";
+// import image4 from "../images/flat4.webp";
 
-const MasterPlan = () => {
+const UnitPlan = () => {
   const [selectedPlan, setSelectedPlan] = useState('2BHK');
 
   const plans = {
@@ -23,18 +23,18 @@ const MasterPlan = () => {
       carpetArea: '2000 sq. ft.',
       price: '₹1,00,00,000',
     },
-    'Master Plan': {
-      image: image4, // Local image for Master Plan
-      carpetArea: 'Overall Layout',
-      price: 'Pricing as per units',
-    },
+    // 'Master Plan': {
+    //   image: image4, // Local image for Master Plan
+    //   carpetArea: 'Overall Layout',
+    //   price: 'Pricing as per units',
+    // },
   };
 
   return (
     <div className="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
       {/* Heading with color and left alignment */}
       <h2 className="text-3xl font-bold mb-6" style={{ color: '#06a34e', textAlign: 'left' }}>
-        Unit Plan and Master Plan
+        Unit Plan
       </h2>
 
       {/* Buttons */}
@@ -84,4 +84,4 @@ const MasterPlan = () => {
   );
 };
 
-export default MasterPlan;
+export default UnitPlan;
